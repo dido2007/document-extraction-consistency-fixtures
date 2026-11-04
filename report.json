@@ -1,0 +1,72 @@
+{
+  "cases": 8,
+  "first_candidate_correct": 3,
+  "constraint_check_correct": 8,
+  "constraint_abstentions": 3,
+  "rows": [
+    {
+      "case": "control",
+      "expected": "good",
+      "first_candidate": "good",
+      "constraint_check": "good",
+      "first_correct": true,
+      "checked_correct": true
+    },
+    {
+      "case": "arithmetic contradiction first",
+      "expected": "good",
+      "first_candidate": "bad",
+      "constraint_check": "good",
+      "first_correct": false,
+      "checked_correct": true
+    },
+    {
+      "case": "source contradiction first",
+      "expected": "good",
+      "first_candidate": "bad",
+      "constraint_check": "good",
+      "first_correct": false,
+      "checked_correct": true
+    },
+    {
+      "case": "decimal cents",
+      "expected": "good",
+      "first_candidate": "good",
+      "constraint_check": "good",
+      "first_correct": true,
+      "checked_correct": true
+    },
+    {
+      "case": "only invalid candidate",
+      "expected": null,
+      "first_candidate": "bad",
+      "constraint_check": null,
+      "first_correct": false,
+      "checked_correct": true
+    },
+    {
+      "case": "two equally supported candidates",
+      "expected": null,
+      "first_candidate": "a",
+      "constraint_check": null,
+      "first_correct": false,
+      "checked_correct": true
+    },
+    {
+      "case": "zero tax",
+      "expected": "good",
+      "first_candidate": "good",
+      "constraint_check": "good",
+      "first_correct": true,
+      "checked_correct": true
+    },
+    {
+      "case": "source total absent",
+      "expected": null,
+      "first_candidate": "bad",
+      "constraint_check": null,
+      "first_correct": false,
+      "checked_correct": true
+    }
+  ]
+}

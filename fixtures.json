@@ -1,0 +1,10 @@
+[
+  {"case":"control","expected":"good","candidates":[{"id":"good","lines":["100.00","20.00"],"tax":"24.00","total":"144.00","printed_total":"144.00"}]},
+  {"case":"arithmetic contradiction first","expected":"good","candidates":[{"id":"bad","lines":["100.00","20.00"],"tax":"24.00","total":"154.00","printed_total":"144.00"},{"id":"good","lines":["100.00","20.00"],"tax":"24.00","total":"144.00","printed_total":"144.00"}]},
+  {"case":"source contradiction first","expected":"good","candidates":[{"id":"bad","lines":["10.00"],"tax":"2.00","total":"12.00","printed_total":"120.00"},{"id":"good","lines":["100.00"],"tax":"20.00","total":"120.00","printed_total":"120.00"}]},
+  {"case":"decimal cents","expected":"good","candidates":[{"id":"good","lines":["0.10","0.20"],"tax":"0.06","total":"0.36","printed_total":"0.36"}]},
+  {"case":"only invalid candidate","expected":null,"candidates":[{"id":"bad","lines":["80.00","20.00"],"tax":"20.00","total":"121.00","printed_total":"121.00"}]},
+  {"case":"two equally supported candidates","expected":null,"candidates":[{"id":"a","lines":["10.00"],"tax":"0.00","total":"10.00","printed_total":"10.00"},{"id":"b","lines":["10.00"],"tax":"0.00","total":"10.00","printed_total":"10.00"}]},
+  {"case":"zero tax","expected":"good","candidates":[{"id":"good","lines":["5.00","5.00"],"tax":"0.00","total":"10.00","printed_total":"10.00"}]},
+  {"case":"source total absent","expected":null,"candidates":[{"id":"bad","lines":["10.00"],"tax":"2.00","total":"12.00","printed_total":null}]}
+]
